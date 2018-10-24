@@ -1,16 +1,16 @@
 {
   "main.css": "/crowdfunding-ethereum/static/css/main.a5d7f441.chunk.css",
-  "main.js": "/crowdfunding-ethereum/static/js/main.8f8cbd19.chunk.js",
-  "main.js.map": "/crowdfunding-ethereum/static/js/main.8f8cbd19.chunk.js.map",
+  "main.js": "/crowdfunding-ethereum/static/js/main.3bd95ecb.chunk.js",
+  "main.js.map": "/crowdfunding-ethereum/static/js/main.3bd95ecb.chunk.js.map",
   "static/css/1.0ca09576.chunk.css": "/crowdfunding-ethereum/static/css/1.0ca09576.chunk.css",
   "static/js/1.dd798d6e.chunk.js": "/crowdfunding-ethereum/static/js/1.dd798d6e.chunk.js",
   "static/js/1.dd798d6e.chunk.js.map": "/crowdfunding-ethereum/static/js/1.dd798d6e.chunk.js.map",
   "runtime~main.js": "/crowdfunding-ethereum/static/js/runtime~main.ec1a1a50.js",
   "runtime~main.js.map": "/crowdfunding-ethereum/static/js/runtime~main.ec1a1a50.js.map",
-  "static/media/semantic.min.css": "/crowdfunding-ethereum/static/media/brand-icons.a1a749e8.svg",
+  "static/media/semantic.min.css": "/crowdfunding-ethereum/static/media/brand-icons.e8c322de.woff2",
   "static/css/main.a5d7f441.chunk.css.map": "/crowdfunding-ethereum/static/css/main.a5d7f441.chunk.css.map",
   "static/css/1.0ca09576.chunk.css.map": "/crowdfunding-ethereum/static/css/1.0ca09576.chunk.css.map",
   "index.html": "/crowdfunding-ethereum/index.html",
-  "precache-manifest.144e9354bf0ac318ac6db4a5ce307083.js": "/crowdfunding-ethereum/precache-manifest.144e9354bf0ac318ac6db4a5ce307083.js",
+  "precache-manifest.0e0f8b9ca3f39c5ac75621ffc4d72c86.js": "/crowdfunding-ethereum/precache-manifest.0e0f8b9ca3f39c5ac75621ffc4d72c86.js",
   "service-worker.js": "/crowdfunding-ethereum/service-worker.js"
 }
