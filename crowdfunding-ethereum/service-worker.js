@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/crowdfunding-ethereum/precache-manifest.03b5ca72e4f937d2115a95bd8f131da4.js"
+  "/crowdfunding-ethereum/precache-manifest.b9931a01544c7c7026625c6aad4636d8.js"
 );
 
 workbox.clientsClaim();
