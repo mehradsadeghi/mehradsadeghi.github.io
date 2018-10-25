@@ -2,8 +2,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Mehrad Sadeghi</title>
@@ -22,6 +25,7 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="static/css/icomoon.css">
 	<link rel="stylesheet" href="static/css/icomoon2.css">
+	<link rel="stylesheet" href="static/css/icomoon3.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="static/css/bootstrap.css">
 	<!-- Theme style  -->
@@ -34,9 +38,10 @@
 	<script src="static/js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body style="background-image: url(static/images/bg_img.jpg);">
-	
+</head>
+
+<body style="background-image: url(static/images/bg_img.jpg);">
+
 	<div id="fh5co-main">
 		<div class="fh5co-tab-wrap">
 			<ul class="fh5co-tab-menu">
@@ -45,6 +50,7 @@
 				<li><a href="#" data-tab="3" data-pie="yes"><span class="icon icon-th"></span><span class="menu-text">Skills</span></a></li>
 				<li><a href="#" data-tab="4"><span class="icon icon-pie-chart"></span><span class="menu-text">Projects</span></a></li>
 				<li><a href="#" data-tab="5"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
+				<li><a href="#" data-tab="6"><span class="icon3-profile"></span><span class="menu-text">Certificates</span></a></li>
 			</ul>
 			<div class="fh5co-tab-content active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -54,20 +60,21 @@
 								<img class="profile_image" src="static/images/profile_img.jpg" alt="Mehrad Sadeghi Profile Image">
 							</figure>
 							<h1>Mehrad Sadeghi</h1>
-							<p>I started programming on my own. It's the passion of my life, so i’m never going to be tired of it. The biggest and most distinctive feature of me is the effort and perseverance that I put in my work.</p>
+							<p>I started programming on my own. It's the passion of my life, so i’m never going to be tired of it. The
+								biggest and most distinctive feature of me is the effort and perseverance that I put in my work.</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 fh5co-counter">
 							<div class="fh5co-number fh5co-left lengthOfWorking">
 								<script>
-                                    function diffYears(dt2, dt1) {
-                                        let diff =(dt2.getTime() - dt1.getTime()) / 1000;
-                                        diff /= (60 * 60 * 24);
-                                        return Math.abs((diff/365.25).toFixed(1));
-                                    }
-                                    let date = diffYears(new Date(), new Date(2014, 7)); // 1393/05
-                                    document.getElementsByClassName('lengthOfWorking')[0].innerHTML = date;
+									function diffYears(dt2, dt1) {
+										let diff = (dt2.getTime() - dt1.getTime()) / 1000;
+										diff /= (60 * 60 * 24);
+										return Math.abs((diff / 365.25).toFixed(1));
+									}
+									let date = diffYears(new Date(), new Date(2014, 7)); // 1393/05
+									document.getElementsByClassName('lengthOfWorking')[0].innerHTML = date;
 								</script>
 							</div>
 							<div class="fh5co-text">
@@ -84,6 +91,7 @@
 						<li><a href="https://github.com/mehradsadeghi" target="_blank"><i class="icon2-github"></i></a></li>
 						<li><a href="https://linkedin.com/in/mehradsadeghi" target="_blank"><i class="icon-linkedin"></i></a></li>
 						<li><a class="virgool" href="https://virgool.io/@mehrad" target="_blank">Vrgl</a></li>
+						<li><a class="virgool" href="https://medium.com/@mehradsadeghi" target="_blank">Medium</a></li>
 					</ul>
 				</div>
 			</div>
@@ -111,9 +119,16 @@
 										I also was the SQL writer in all projects. I was the Pendara’s CEO consultant in technical decisions.
 									</p>
 									<h4>Technologies</h4>
-									<p class="contents">PHP (Laravel - Codeigniter) , Node.js, ReactJS, TypeScript, SQL and MySQL, Redis, Restful API System, Clouding (Server), SCRUM Methodology, Git Version Control</p>
+									<p class="contents">PHP (Laravel - Codeigniter) , Node.js, ReactJS, TypeScript, SQL and MySQL, Redis, Restful
+										API System, Clouding (Server), SCRUM Methodology, Git Version Control</p>
 									<h4>Important things i’ve done at Pendara</h4>
-									<p class="contents">I was the head of designing Wikievent project’s database (MySQL). I performed the migration from Codeigniter framework to Laravel in Wikievent project. I also proposed the migration from VPS to Clouding (based on Docker system) because of it’s advantages, which was approved by Pendara’s CEO. I proposed perform Application Testing and Documenting to make the development path more reliable and make the project more scale able which was approved by Pendara’s CEO. In AutoApp project I proposed the Long Polling System instead of WebSocket which reduced the pressure on server. I also found the formula for getting the nearby cars on the map by trigonometric calculations.</p>
+									<p class="contents">I was the head of designing Wikievent project’s database (MySQL). I performed the
+										migration from Codeigniter framework to Laravel in Wikievent project. I also proposed the migration from VPS
+										to Clouding (based on Docker system) because of it’s advantages, which was approved by Pendara’s CEO. I
+										proposed perform Application Testing and Documenting to make the development path more reliable and make the
+										project more scale able which was approved by Pendara’s CEO. In AutoApp project I proposed the Long Polling
+										System instead of WebSocket which reduced the pressure on server. I also found the formula for getting the
+										nearby cars on the map by trigonometric calculations.</p>
 								</div>
 							</div>
 
@@ -126,7 +141,9 @@
 									<h3>Feb 2016 – Mar 2017</h3>
 									<span class="job_position">Full Stack Developer</span>
 									<h4>Job Description</h4>
-									<p class="contents">Full Stack developer in several separate projects. Dotech owned a CMS based on pure PHP. I was the performer of five projects from 0 to 100 by Dotech CMS and developed different aspects of the very CMS.</p>
+									<p class="contents">Full Stack developer in several separate projects. Dotech owned a CMS based on pure PHP. I
+										was the performer of five projects from 0 to 100 by Dotech CMS and developed different aspects of the very
+										CMS.</p>
 									<h4>Technologies</h4>
 									<p class="contents">PHP, SQL and MySQL, JavaScript, HTML5, CSS3, SVG, SVN Version Control</p>
 									<h4>Important things i’ve done at Dotech</h4>
@@ -167,7 +184,8 @@
 									<h4>Technologies</h4>
 									<p class="contents">PHP, SQL and MySQL, JavaScript, Joomla CMS</p>
 									<h4>Important things i’ve done at Segal</h4>
-									<p class="contents">I wrote a script in JavaScript which prevented Segal from outsourcing the module development (even though I was not an expert in JavaScript).</p>
+									<p class="contents">I wrote a script in JavaScript which prevented Segal from outsourcing the module
+										development (even though I was not an expert in JavaScript).</p>
 								</div>
 							</div>
 						</div>
@@ -209,21 +227,30 @@
 							<div class="chart" data-percent="80"><span><strong>Restful API Structure</strong>80%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="50"><span><strong>Blockchain Fundamentals</strong>50%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="50"><span><strong>Ethereum Platform</strong>50%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="50"><span><strong>Solidity &nbsp;&nbsp; Language</strong>40%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="50"><span><strong>Stellar &nbsp;&nbsp;&nbsp;&nbsp; Platform</strong>40%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="50"><span><strong>Docker</strong>70%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="60"><span><strong>HTML 5</strong>60%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="60"><span><strong>CSS 3</strong>60%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>Blockchain</strong>50%</span></div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>Docker</strong>50%</span></div>
-						</div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="50"><span><strong>ReactJS</strong>50%</span></div>
 						</div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="50"><span><strong>Sass</strong>50%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
@@ -268,11 +295,39 @@
 									<i class="icon-leaf"></i>
 								</div>
 								<div class="fh5co-text">
+									<h2>Crowdfunding</h2>
+									<h3>WebApp | Open Source</h3>
+									<p class="contents project_description">
+										This is an open source project based on Ethereum Platform. The idea is about crowdfunding for ideas.
+										I made this project open source in order to encourage other developers to care more about being open source.
+										<br>
+										Front end technology in this project is ReactJS and the back end technologies are Ethereum platform and
+										Solidity programming language.
+										I also used mocha for testing contract(s).
+										<br>
+										Metamask is one of the Ethereum wallets which this application depends on.
+										<br>
+										Address of project :
+										<a href="https://github.com/mehradsadeghi/crowdfunding-ethereum" target="_blank">
+											https://github.com/mehradsadeghi/crowdfunding-ethereum
+										</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-leaf"></i>
+								</div>
+								<div class="fh5co-text">
 									<h2>Wikievent</h2>
 									<h3>Website</h3>
 									<p class="contents project_description">
-                                        It is a medium social networking website (in events field). I was the senior programmer at this project at first place, then i became the project manager. Database design and optimization was one of the most challenger part of this project. Also switching from Codeigniter framework to Laravel which was my idea was another challenges we had in this project.
-                                    </p>
+										It is a medium social networking website (in events field). I was the senior programmer at this project at
+										first place, then i became the project manager. Database design and optimization was one of the most
+										challenger part of this project. Also switching from Codeigniter framework to Laravel which was my idea was
+										another challenges we had in this project.
+									</p>
 								</div>
 							</div>
 
@@ -284,8 +339,9 @@
 									<h2>AutoApp</h2>
 									<h3>Website and WebApp</h3>
 									<p class="contents project_description">
-                                        I was the front end developer in this project. I also was the database designing consultant. I made a very small chat application based on Node.js Platform to visualize the real time applications based on WebSocket.
-                                    </p>
+										I was the front end developer in this project. I also was the database designing consultant. I made a very
+										small chat application based on Node.js Platform to visualize the real time applications based on WebSocket.
+									</p>
 								</div>
 							</div>
 
@@ -296,7 +352,10 @@
 								<div class="fh5co-text">
 									<h2>Time.Uncox</h2>
 									<h3>Website</h3>
-									<p class="contents project_description">This project was executed and managed by Behnam Aghajani (uncox.com) , which was consists of 10 programmers. The goal of this project was to achieve the algorithm of converting date between jalali , gregorian and hijri , design and develop it's web site , Android app , iOS app and finally produce a flexible and efficient API for Iranian programmers.</p>
+									<p class="contents project_description">This project was executed and managed by Behnam Aghajani (uncox.com) ,
+										which was consists of 10 programmers. The goal of this project was to achieve the algorithm of converting
+										date between jalali , gregorian and hijri , design and develop it's web site , Android app , iOS app and
+										finally produce a flexible and efficient API for Iranian programmers.</p>
 								</div>
 							</div>
 
@@ -308,8 +367,11 @@
 									<h2>School Portal</h2>
 									<h3>WebApp</h3>
 									<p class="contents project_description">
-                                        It was one of my side projects which was performed based on my own PHP framework, which had the HMVC structure. The goal of this software is to make relation between school and parents easier. Couple of this software features are sending tickets from admin and teachers to parents and students, records quarterly and periodic test scores by teachers, creates workbooks which students and their parents can view and etc.
-                                    </p>
+										It was one of my side projects which was performed based on my own PHP framework, which had the HMVC
+										structure. The goal of this software is to make relation between school and parents easier. Couple of this
+										software features are sending tickets from admin and teachers to parents and students, records quarterly and
+										periodic test scores by teachers, creates workbooks which students and their parents can view and etc.
+									</p>
 								</div>
 							</div>
 
@@ -321,8 +383,10 @@
 									<h2>Sejel</h2>
 									<h3>WebApp</h3>
 									<p class="contents project_description">
-                                        It was one of my side projects which was performed based on my own PHP framework, which had the HMVC structure. This software creates production factors and information, generates unique barcodes, creates labels, records sales and etc.
-                                    </p>
+										It was one of my side projects which was performed based on my own PHP framework, which had the HMVC
+										structure. This software creates production factors and information, generates unique barcodes, creates
+										labels, records sales and etc.
+									</p>
 								</div>
 							</div>
 
@@ -333,7 +397,9 @@
 								<div class="fh5co-text">
 									<h2>Mozooazad</h2>
 									<h3>Website</h3>
-									<p class="contents project_description">It is a medium social networking website (in blogging field). I was the back end and front end developer in this project. I also associated in designing database (which was complicated on its own).</p>
+									<p class="contents project_description">It is a medium social networking website (in blogging field). I was
+										the back end and front end developer in this project. I also associated in designing database (which was
+										complicated on its own).</p>
 								</div>
 							</div>
 
@@ -410,7 +476,8 @@
 								<div class="fh5co-text">
 									<h2>PekaGroup</h2>
 									<h3>Website</h3>
-									<p class="contents project_description">This project is performed based on my own PHP framework, which had the MVC structure, Also it was a single page website based on bootstrap framework.</p>
+									<p class="contents project_description">This project is performed based on my own PHP framework, which had the
+										MVC structure, Also it was a single page website based on bootstrap framework.</p>
 								</div>
 							</div>
 
@@ -421,7 +488,8 @@
 								<div class="fh5co-text">
 									<h2>Sepirak</h2>
 									<h3>Website</h3>
-									<p class="contents project_description">This project is performed based on my own PHP framework, which had the MVC structure.</p>
+									<p class="contents project_description">This project is performed based on my own PHP framework, which had the
+										MVC structure.</p>
 								</div>
 							</div>
 
@@ -448,6 +516,70 @@
 					</div>
 				</div>
 			</div>
+			<div class="fh5co-tab-content" data-content="6">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<p>The learning process never going to end for me.</p>
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon3-user-check"></i>
+								</div>
+								<div class="fh5co-text">
+									<a href="http://ude.my/UC-BHK7LNZI" target="_blank">
+										<h2>Blockchain A-Z</h2>
+									</a>
+									<p>Udemy</p>
+								</div>
+							</div>
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon3-user-check"></i>
+								</div>
+								<div class="fh5co-text">
+									<a href="http://ude.my/UC-FW16QGGP" target="_blank">
+										<h2>Ethereum and Solidity</h2>
+									</a>
+									<p>Udemy</p>
+								</div>
+							</div>
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon3-user-check"></i>
+								</div>
+								<div class="fh5co-text">
+									<a href="http://ude.my/UC-M78KK55J" target="_blank">
+										<h2>Docker Mastery</h2>
+									</a>
+									<p>Udemy</p>
+								</div>
+							</div>
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon3-user-check"></i>
+								</div>
+								<div class="fh5co-text">
+									<a href="http://ude.my/UC-9ZR60129" target="_blank">
+										<h2>Modern JavaScript : Advanced Topics</h2>
+									</a>
+									<p>Udemy</p>
+								</div>
+							</div>
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon3-user-check"></i>
+								</div>
+								<div class="fh5co-text">
+									<a href="http://ude.my/UC-YJX7SO06" target="_blank">
+										<h2>RabbitMQ</h2>
+									</a>
+									<p>Udemy</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<footer id="fh5co-footer">
 			<div class="row">
@@ -456,13 +588,13 @@
 						&copy; <span class="year"></span> All Rights Reserved.
 					</small>
 					<script>
-                        document.getElementsByClassName('year')[0].innerHTML = new Date().getFullYear();
+						document.getElementsByClassName('year')[0].innerHTML = new Date().getFullYear();
 					</script>
 				</div>
 			</div>
 		</footer>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="static/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -476,5 +608,6 @@
 	<!-- MAIN JS -->
 	<script src="static/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
