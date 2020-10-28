@@ -37,7 +37,7 @@
                 e(a).addClass(f);
                 var c = setInterval(function () {
 
-                    $("html, body").animate({ scrollTop: $(document).height() }, 0);
+                    scrollToBottom();
 
                     var f = r.cursorHtml;
                     f = e("<div>").append(e(f).addClass(i)).html();
@@ -71,6 +71,10 @@
         return this
     }
 })(jQuery)
+
+function scrollToBottom() {
+    $("html, body").animate({scrollTop: $(document).height()}, 0);
+}
 
 $(document).ready(function () {
 
