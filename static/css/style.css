@@ -3,7 +3,6 @@
     src: url("../fonts/consolas.woff") format("woff");
 }
 
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 html {
     background: #282828;
     overflow-y: scroll;
@@ -14,15 +13,11 @@ body {
     color: #fff;
     font-weight: 400;
     max-width: 40em;
-    padding: 0em 1em;
+    padding: 0 1em;
     margin: 3% 0;
 }
 
 ::selection {
-    background: #282828
-}
-
-::-webkit-selection {
     background: #282828
 }
 
@@ -64,21 +59,20 @@ span {
 }
 
 kbd {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Consolas', 'Inconsolata', monospace;
     border: 1px solid #999;
     text-transform: uppercase;
     padding: 0 .2em;
 }
 
-input[type="text"] {
+#command-input {
     max-width: 10em;
     border: none;
     font-family: inherit;
     background: #282828;
-    padding: 0 .5em;
 }
 
-input[type="text"]:focus {
+#command-input:focus {
     background: #282828;
     color: #fff;
     outline: none;
@@ -90,15 +84,6 @@ input[type="text"]:focus {
     color: #fff;
     font-weight: 700;
     margin: 2em 0;
-}
-
-
-section {
-    display: none;
-}
-
-.open {
-    display: block;
 }
 
 .my-05 {

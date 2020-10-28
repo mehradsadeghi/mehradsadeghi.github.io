@@ -72,57 +72,72 @@
     }
 })(jQuery)
 
+let commands = {
+    home: 'home',
+    cert: 'cert',
+    contactme: 'contactme',
+    exp: 'exp',
+    help: 'help',
+    home: 'home',
+    projects: 'projects',
+    skills: 'skills',
+    ui: 'ui',
+};
+
+function handleCommand(event, element) {
+
+    if (!enterKeyIsPressed(event.which)) {
+        return;
+    }
+
+    let command = element.value;
+
+    for(let i in commands) {
+        if(command == i) {
+            renderIntoTerminal(window[commands[i]]());
+            return;
+        }
+    }
+
+    renderIntoTerminal(notfound());
+}
+
+function renderIntoTerminal(content) {
+
+    hideCommandInput();
+
+    document.getElementById('app').innerHTML = content;
+
+    animateContentIn(document.getElementById('app'), function() {
+        resetCommandInput();
+    });
+}
+
+function animateContentIn(element, afterAnimationCallBack) {
+
+    $(element).textTyper({
+        speed: 20,
+        afterAnimation: function () {
+            afterAnimationCallBack();
+        }
+    });
+}
+
 function scrollToBottom() {
     $("html, body").animate({scrollTop: $(document).height()}, 0);
 }
 
-$(document).ready(function () {
-
+function hideCommandInput() {
     $('.command').hide();
-    $('input[type="text"]').focus();
-    $('#home').addClass('open');
-    $('#home').textTyper({
-        speed: 20,
-        afterAnimation: function () {
-            $('.command').fadeIn();
-            $('input[type="text"]').focus();
-            $('input[type="text"]').val('');
-        }
-    });
+}
 
-    var sectionsArray = [];
+function resetCommandInput() {
+    $('.command').fadeIn();
+    document.getElementById('command-input').value = '';
+    document.getElementById('command-input').focus();
+}
 
-    $('section').each(function (i, e) {
-        sectionsArray.push($(e).attr('id'));
-    });
-
-    $('input[type="text"]').keyup(function (e) {
-
-        const ENTER_KEY_CODE = 13;
-
-        if (e.which == ENTER_KEY_CODE) {
-
-            $('.command').hide();
-            var destination = $('input[type="text"]').val();
-
-            // Display section with id == destination and hide all others
-            $('section[id="' + destination + '"]').addClass('open').siblings().removeClass('open');
-
-            // If destination does not match our array of section ids, display error section
-            if ($.inArray(destination, sectionsArray) == -1) {
-                $('#error').addClass('open');
-                $('#error').siblings().removeClass('open');
-            }
-
-            // All sections with class .open init textTyper
-            $('.open').textTyper({
-                speed: 20,
-                afterAnimation: function () {
-                    $('.command').fadeIn();
-                    $('input[type="text"]').focus();
-                    $('input[type="text"]').val('');
-                }
-            });
-        }
-    });
-});
+function enterKeyIsPressed(value) {
+    const ENTER_KEY_CODE = 13
+    return value == ENTER_KEY_CODE;
+}
