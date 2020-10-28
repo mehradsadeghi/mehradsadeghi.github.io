@@ -1,7 +1,7 @@
 function ui() {
     return `
         <section>
-            <h2><strong>UI Credit</strong></h2>
+            <h2><strong> >> UI Credit</strong></h2>
             <div>
                 Core of this UI is forked from 
                 <a href="https://github.com/syndicatefx/cli">GitHub</a>
