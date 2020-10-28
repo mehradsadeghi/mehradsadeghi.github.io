@@ -1,653 +1,231 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Mehrad Sadeghi</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Mehrad Sadeghi Resume" />
-	<meta name="keywords" content="PHP, Laravel, Codeigniter, Lumen, SQL, MySQL Database Driver, MySQL Optimization, JavaScript, JavaScript ES6,  jQuery Library, HTML5, CSS3, LESS, Sass, Node.js Platform, ReactJS Framework, Docker Platform, Software Testing (BDD Method), SCRUM Methodology, MongoDB NoSQL Database, Redis NoSQL Database, TypeScript, GulpJS Task Runner, WebPack Bundler, Restful API Structure" />
-	<meta name="author" content="Mehrad Sadeghi" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mehrad Sadeghi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mehrad Sadeghi Resume" />
+    <meta name="keywords" content="Mehrad Sadeghi,Mehrad,Sadeghi" />
+    <meta name="author" content="Mehrad Sadeghi" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.png">
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="static/css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="static/css/icomoon.css">
-	<link rel="stylesheet" href="static/css/icomoon2.css">
-	<link rel="stylesheet" href="static/css/icomoon3.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="static/css/bootstrap.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="static/css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="static/js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="static/js/respond.min.js"></script>
-	<![endif]-->
-
+    <link rel="stylesheet" href="./static/css/normalize.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
+<body id="body">
 
-<body style="background-image: url(static/images/bg_img.jpg);">
+<main>
+    <section id="home">
+        <h2>Hi there, </h2>
+        <h2>I'm Mehrad Sadeghi. An enthusiastic backend developer.</h2>
+        <h2>I have about <span style="display: inline-block" id="exp-years"></span> years of experience in web
+            development.</h2>
+        <br>
+        <h2>I <strong>love</strong> CLIs. That's why you're inside one here :)</h2>
+        <br>
+        <p>Try
+            <strong>help</strong> + <strong><kbd>Enter</kbd></strong>
+            to get list of commands
+        </p>
+    </section>
 
-	<div id="fh5co-main">
-		<div class="fh5co-tab-wrap">
-			<ul class="fh5co-tab-menu">
-				<li class="active"><a href="#" data-tab="1"><span class="icon icon-profile-male"></span><span class="menu-text">Profile</span></a></li>
-				<li><a href="#" data-tab="2"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
-				<li><a href="#" data-tab="3" data-pie="yes"><span class="icon icon-th"></span><span class="menu-text">Skills</span></a></li>
-				<li><a href="#" data-tab="4"><span class="icon icon-pie-chart"></span><span class="menu-text">Projects</span></a></li>
-				<li><a href="#" data-tab="5"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
-				<li><a href="#" data-tab="6"><span class="icon3-profile"></span><span class="menu-text">Certificates</span></a></li>
-			</ul>
-			<div class="fh5co-tab-content active" data-content="1">
-				<div class="fh5co-content-inner text-center">
-					<div class="row row-bottom-padded-sm">
-						<div class="col-md-12">
-							<figure>
-								<img class="profile_image" src="static/images/profile_img.jpg" alt="Mehrad Sadeghi Profile Image">
-							</figure>
-							<h1>Mehrad Sadeghi</h1>
-							<p>I started programming on my own. It's the passion of my life, so i’m never going to be tired of it. The
-								biggest and most distinctive feature of me is the effort and perseverance that I put in my work.</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 fh5co-counter">
-							<div class="fh5co-number fh5co-left lengthOfWorking">
-								<script>
-									function diffYears(dt2, dt1) {
-										let diff = (dt2.getTime() - dt1.getTime()) / 1000;
-										diff /= (60 * 60 * 24);
-										return Math.abs((diff / 365.25).toFixed(1));
-									}
-									let date = diffYears(new Date(), new Date(2014, 7)); // 1393/05
-									document.getElementsByClassName('lengthOfWorking')[0].innerHTML = date;
-								</script>
-							</div>
-							<div class="fh5co-text">
-								<h3 class="border-bottom">
-									Years of experience in Web Development
-								</h3>
-							</div>
-						</div>
-					</div>
-					<br><br>
-					<ul class="fh5co-social">
-						<li><a href="mailto:mehrad177@gmail.com"><i class="icon-envelope"></i></a></li>
-						<li><a href="https://github.com/mehradsadeghi" target="_blank"><i class="icon2-github"></i></a></li>
-						<li><a href="https://linkedin.com/in/mehradsadeghi" target="_blank"><i class="icon-linkedin"></i></a></li>
-						<li><a class="virgool" href="https://virgool.io/@mehrad" target="_blank">Vrgl</a></li>
-						<li><a class="virgool" href="https://medium.com/@mehradsadeghi" target="_blank">Medium</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="2">
-				<div class="fh5co-content-inner experiences">
-					<div class="row">
-						<div class="col-md-12">
+    <section id="exp">
+        <h2><strong> >> Experiences</strong></h2>
 
-							<p>I have the privilege to work with these cool companies.</p>
+        <br>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Free Lancer</h2>
-									<h3>Feb 2015 – Present</h3>
-									<span class="job_position">Full Stack Developer</span>
-									<h4>Job Description</h4>
-									<p class="contents">Research, study and development are the main tasks I handled since 2015 in my free lancing
-										career path. I spent most of my time researching and studying new technologies these past years which ended
-										up performing different websites and webapps.
-										I also spend pretty much on pursuing and studying my interests like C programming language.</p>
-									<h4>Technologies</h4>
-									<p class="contents">PHP, Laravel Framework, Lumen Micro Framework, JavaScript, JavaScript ES6, jQuery, SQL and
-										MySQL,
-										Restful API Structure, Blockchain Fundamentals, Ethereum Platform, Solidity Language, Stellar Platform,
-										Docker,
-										HTML 5, CSS 3, ReactJS, Sass, LESS, Node.js, Unit Testing, SCRUM Methodology, MongoDB, Redis, GulpJS,
-										WebPack,
-										RabbitMQ, SEO, C Programming Language</p>
-									<h4>Important things i’ve done at Free Lancing</h4>
-									<p class="contents">
-										- I wrote a small PHP framework based on OOP and MVC structure. Then I developed the very framework and
-										performed HMVC structure on it.
-										<br>
-										- I developed 4 projects based on my own framework.
-										<br>
-										- I was one of Time.Uncox project members.
-										<br>
-										- I developed 3 projects based on Laravel framework.
-										<br>
-										- I developed an open source Ethereum project which is available in my github repository.
-									</p>
-								</div>
-							</div>
+        <p class="my-05">
+        <div>
+            I had the privilege to work in different companies these past years.
+            I earned various experiences both technically and soft skills.
+        </div>
+        <br>
+        <div>
+            You can see all my working experiences in details on my <a href="https://linkedin.com/in/mehradsadeghi">LinkedIn
+            profile</a>.
+        </div>
+        </p>
+    </section>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Pendara</h2>
-									<h3>April 2017 - Jun 2018</h3>
-									<span class="job_position">Full Stack Developer</span>
-									<h4>Job Description</h4>
-									<p class="contents">Full Stack developer in couple of projects.
-										First one (AutoApp) was an online service for requesting car health.
-										I was PHP (Laravel), Node.js and ReactJS developer on that project.
-										The second project was a social networking project named Wikievent,
-										which I was PHP (Laravel and Codeigniter) developer on that project.
-										I also was the SQL writer in all projects. I was the Pendara’s CEO consultant in technical decisions.
-									</p>
-									<h4>Technologies</h4>
-									<p class="contents">PHP (Laravel - Codeigniter) , Node.js, ReactJS, TypeScript, SQL and MySQL, Redis, Restful
-										API System, Clouding (Server), SCRUM Methodology, Git Version Control</p>
-									<h4>Important things i’ve done at Pendara</h4>
-									<p class="contents">I was the head of designing Wikievent project’s database (MySQL). I performed the
-										migration from Codeigniter framework to Laravel in Wikievent project. I also proposed the migration from VPS
-										to Clouding (based on Docker system) because of it’s advantages, which was approved by Pendara’s CEO. I
-										proposed perform Application Testing and Documenting to make the development path more reliable and make the
-										project more scale able which was approved by Pendara’s CEO. In AutoApp project I proposed the Long Polling
-										System instead of WebSocket which reduced the pressure on server. I also found the formula for getting the
-										nearby cars on the map by trigonometric calculations.</p>
-								</div>
-							</div>
+    <section id="skills">
+        <h2><strong> >> Skills</strong></h2>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Dotech</h2>
-									<h3>Feb 2016 – Mar 2017</h3>
-									<span class="job_position">Full Stack Developer</span>
-									<h4>Job Description</h4>
-									<p class="contents">Full Stack developer in several separate projects. Dotech owned a CMS based on pure PHP. I
-										was the performer of five projects from 0 to 100 by Dotech CMS and developed different aspects of the very
-										CMS.</p>
-									<h4>Technologies</h4>
-									<p class="contents">PHP, SQL and MySQL, JavaScript, HTML5, CSS3, SVG, SVN Version Control</p>
-									<h4>Important things i’ve done at Dotech</h4>
-									<p class="contents">I introduced Object Oriented Programming,
-										MVC and HMVC structure in order to have a better development system which was approved by Dotech CEO.
-										I also introduced new features of JavaScript which made the development more effective in variant projects.</p>
-								</div>
-							</div>
+        <br>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Segal</h2>
-									<h3>Jun 2014 – Jan 2015</h3>
-									<span class="job_position">Intern</span>
-									<h4>Job Description</h4>
-									<p class="contents">I was assigned to work with Joomla CMS and write couple of basic HTML, CSS and JavaScript
-										codes.</p>
-									<h4>Technologies</h4>
-									<p class="contents">PHP, SQL and MySQL, JavaScript, Joomla CMS</p>
-									<h4>Important things i’ve done at Segal</h4>
-									<p class="contents">I wrote a script in JavaScript which prevented Segal from outsourcing the module
-										development (even though I was not an expert in JavaScript).</p>
-								</div>
-							</div>
-						</div>
+        <div><strong>Main</strong></div>
+        <div>
+            PHP Programming Language,
+            PHP Laravel Framework,
+            PHP Lumen Micro Framework,
 
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="3">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<p>I've got these skills by hard working, And the road of learning is never going to reach an end for me...</p>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>PHP</strong>90%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>PHP Laravel Framework</strong>90%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>PHP Lumen Framework</strong>90%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>JavaScript</strong>90%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>JavaScript ES6</strong>90%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="80"><span><strong>SQL</strong>80%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="80"><span><strong>MySQL</strong>80%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="80"><span><strong>Restful API Structure</strong>80%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>Blockchain Fundamentals</strong>50%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>Docker</strong>70%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="60"><span><strong>HTML 5</strong>60%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="60"><span><strong>CSS 3</strong>60%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>ReactJS</strong>50%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>Sass</strong>50%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="50"><span><strong>LESS</strong>50%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="35"><span><strong>Node.js</strong>35%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="30"><span><strong>Testing</strong>30%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="30"><span><strong>SCRUM</strong>30%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="30"><span><strong>MongoDB</strong>30%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="30"><span><strong>Redis</strong>30%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="30"><span><strong>GulpJS</strong>30%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="30"><span><strong>WebPack</strong>30%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="30"><span><strong>RabbitMQ</strong>30%</span></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="4">
-				<div class="fh5co-content-inner experiences">
-					<div class="row">
-						<div class="col-md-12">
+            MySQL Database,
+            Structured Query Language (SQL),
 
-							<p>I'm very sensitive about the output quality of product.</p>
+            Docker,
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Stellar Wallet</h2>
-									<h3>WebApp | Bot</h3>
-									<p class="contents project_description">
-										It was a small software wallet based on React.js, Node.js and Stellar
-										Blockchain Platform. The application was consist of the basic operations for Stellar network and user could
-										interact with it based on a web application. I Also wrote a bot for Bale Messaging Application which could do
-										the same as the web application wallet.
-									</p>
-								</div>
-							</div>
+            Software Testing
+        </div>
+        <br>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Crowdfunding</h2>
-									<h3>WebApp | Open Source</h3>
-									<p class="contents project_description">
-										This is an open source project based on Ethereum Platform. The idea is about crowdfunding for ideas.
-										I made this project open source in order to encourage other developers to care more about being open source.
-										<br>
-										Front end technology in this project is ReactJS and the back end technologies are Ethereum platform and
-										Solidity programming language.
-										I also used mocha for testing contract(s).
-										<br>
-										Address of project :
-										<a href="https://github.com/mehradsadeghi/crowdfunding-ethereum" target="_blank">
-											https://github.com/mehradsadeghi/crowdfunding-ethereum
-										</a>
-										<br>
-										And an online sample of this peoject :
-										<a href="https://mehradsadeghi.github.io/crowdfunding-ethereum" target="_blank">
-											https://mehradsadeghi.github.io/crowdfunding-ethereum
-										</a>
-									</p>
-								</div>
-							</div>
+        <div><strong>Related</strong></div>
+        <div>
+            SOLID Principals,
+            Design Patterns,
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Wikievent</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">
-										It is a medium social networking website (in events field). I was the senior programmer at this project at
-										first place, then i became the project manager. Database design and optimization was one of the most
-										challenger part of this project. Also switching from Codeigniter framework to Laravel which was my idea was
-										another challenges we had in this project.
-									</p>
-								</div>
-							</div>
+            NodeJs,
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>AutoApp</h2>
-									<h3>Website and WebApp</h3>
-									<p class="contents project_description">
-										I was the front end developer in this project. I also was the database designing consultant. I made a very
-										small chat application based on Node.js Platform to visualize the real time applications based on WebSocket.
-									</p>
-								</div>
-							</div>
+            SCRUM Methodology,
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Time.Uncox</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">This project was executed and managed by Behnam Aghajani (uncox.com) ,
-										which was consists of 10 programmers. The goal of this project was to achieve the algorithm of converting
-										date between jalali , gregorian and hijri , design and develop it's web site , Android app , iOS app and
-										finally produce a flexible and efficient API for Iranian programmers.</p>
-								</div>
-							</div>
+            MongoDB,
+            Redis,
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>School Portal</h2>
-									<h3>WebApp</h3>
-									<p class="contents project_description">
-										It was one of my side projects which was performed based on my own PHP framework, which had the HMVC
-										structure. The goal of this software is to make relation between school and parents easier. Couple of this
-										software features are sending tickets from admin and teachers to parents and students, records quarterly and
-										periodic test scores by teachers, creates workbooks which students and their parents can view and etc.
-									</p>
-								</div>
-							</div>
+            Restful API
+        </div>
+    </section>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Sejel</h2>
-									<h3>WebApp</h3>
-									<p class="contents project_description">
-										It was one of my side projects which was performed based on my own PHP framework, which had the HMVC
-										structure. This software creates production factors and information, generates unique barcodes, creates
-										labels, records sales and etc.
-									</p>
-								</div>
-							</div>
+    <section id="projects">
+        <h2><strong> >> Projects</strong></h2>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Mozooazad</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">It is a medium social networking website (in blogging field). I was
-										the back end and front end developer in this project. I also associated in designing database (which was
-										complicated on its own).</p>
-								</div>
-							</div>
+        <br>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Abrii</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">I was the back end and front end developer in this project.</p>
-								</div>
-							</div>
+        <div>
+            I'm very sensitive about the output quality of product and I always try to do the best I can.
+            I was involved in different projects these past years, Including blogs, Online stores, Web apps and etc.
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Sanavision</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">I was the back end and front end developer in this project.</p>
-								</div>
-							</div>
+            <br>
+            <br>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>CmsSaz 23</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">I was the back end and front end developer in this project.</p>
-								</div>
-							</div>
+            You can see all my projects in details on my <a href="https://linkedin.com/in/mehradsadeghi">LinkedIn profile</a>.
+        </div>
+    </section>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Dotech</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">I was the front end developer of this project.</p>
-								</div>
-							</div>
+    <section id="cert">
+        <h2><strong> >> Certificates</strong></h2>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>A Charity Institute</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">I was one of the members in this project’s team.</p>
-								</div>
-							</div>
+        <br>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>MyDanesh</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">I was one of the members in this project’s team.</p>
-								</div>
-							</div>
+        <div>
+            <strong>
+                Linux Administration And Command Line Skills - Udemy -
+                <a href="http://ude.my/UC-41f498ff-476d-45f8-87f2-a256e5802a38">Certificate</a>
+            </strong>
+        </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>PekaGroup</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">This project is performed based on my own PHP framework, which had the
-										MVC structure, Also it was a single page website based on bootstrap framework.</p>
-								</div>
-							</div>
+        <div>
+            <strong>
+                Website Hacking and Penetration Testing - zSecurity - <a
+                    href="https://zsecurity.org/certification/validation/?cert_number=keOlZnPn">Certificate</a>
+            </strong>
+        </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-leaf"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Sepirak</h2>
-									<h3>Website</h3>
-									<p class="contents project_description">This project is performed based on my own PHP framework, which had the
-										MVC structure.</p>
-								</div>
-							</div>
+        <div>
+            <strong>
+                C Programming - Udemy -
+                <a href="http://ude.my/UC-15UXV6WW">Certificate</a>
+            </strong>
+        </div>
 
-						</div>
+        <div>
+            <strong>
+                Ethereum and Solidity - Udemy - <a href="http://ude.my/UC-FW16QGGP">Certificate</a>
+            </strong>
+        </div>
 
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="5">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<p>The learning process never going to end for me.</p>
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2010-2014</h2>
-									<p>Bachelor of State Management</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="6">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<p>The learning process never going to end for me.</p>
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon3-user-check"></i>
-								</div>
-								<div class="fh5co-text">
-									<a href="https://zsecurity.org/certification/validation/?cert_number=keOlZnPn" target="_blank">
-										<h2>Website Hacking and Penetration Testing</h2>
-									</a>
-									<p>zSecurity</p>
-								</div>
-							</div>
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon3-user-check"></i>
-								</div>
-								<div class="fh5co-text">
-									<a href="http://ude.my/UC-BHK7LNZI" target="_blank">
-										<h2>Blockchain A-Z</h2>
-									</a>
-									<p>Udemy</p>
-								</div>
-							</div>
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon3-user-check"></i>
-								</div>
-								<div class="fh5co-text">
-									<a href="http://ude.my/UC-FW16QGGP" target="_blank">
-										<h2>Ethereum and Solidity</h2>
-									</a>
-									<p>Udemy</p>
-								</div>
-							</div>
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon3-user-check"></i>
-								</div>
-								<div class="fh5co-text">
-									<a href="http://ude.my/UC-M78KK55J" target="_blank">
-										<h2>Docker Mastery</h2>
-									</a>
-									<p>Udemy</p>
-								</div>
-							</div>
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon3-user-check"></i>
-								</div>
-								<div class="fh5co-text">
-									<a href="http://ude.my/UC-9ZR60129" target="_blank">
-										<h2>Modern JavaScript : Advanced Topics</h2>
-									</a>
-									<p>Udemy</p>
-								</div>
-							</div>
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon3-user-check"></i>
-								</div>
-								<div class="fh5co-text">
-									<a href="http://ude.my/UC-YJX7SO06" target="_blank">
-										<h2>RabbitMQ</h2>
-									</a>
-									<p>Udemy</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer id="fh5co-footer">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center">
-					<small>
-						&copy; <span class="year"></span> All Rights Reserved.
-					</small>
-					<script>
-						document.getElementsByClassName('year')[0].innerHTML = new Date().getFullYear();
-					</script>
-				</div>
-			</div>
-		</footer>
-	</div>
+        <div>
+            <strong>
+                Blockchain A-Z - Udemy - <a href="http://ude.my/UC-BHK7LNZI">Certificate</a>
+            </strong>
+        </div>
 
-	<!-- jQuery -->
-	<script src="static/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="static/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="static/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="static/js/jquery.waypoints.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="static/js/jquery.easypiechart.min.js"></script>
-	<!-- MAIN JS -->
-	<script src="static/js/main.js"></script>
+        <div>
+            <strong>
+                Docker Mastery - Udemy - <a href="http://ude.my/UC-M78KK55J">Certificate</a>
+            </strong>
+        </div>
 
+        <div>
+            <strong>
+                Modern JavaScript : Advanced Topics - Udemy - <a href="http://ude.my/UC-9ZR60129">Certificate</a>
+            </strong>
+        </div>
+
+        <div>
+            <strong>
+                RabbitMQ - Udemy - <a href="http://ude.my/UC-YJX7SO06">Certificate</a>
+            </strong>
+        </div>
+
+    </section>
+
+    <section id="ui">
+        <h2><span>UI Credit</span></h2>
+        <p>Core of this CLI is made by <a href="https://github.com/syndicatefx">syndicatefx</a></p>
+        <p>You can take a look at the source code <a href="https://github.com/syndicatefx/cli">here</a>.</p>
+    </section>
+
+    <section id="error">
+        <p>Command not found!
+        <p><span>Type 'help' + <kbd>Enter</kbd> -- to see available commands.</span></p>
+    </section>
+
+    <section id="contactme">
+        <h2>You can get in touch with me by:</h2>
+        <ul>
+            <li><a target="_blank" href="https://github.com/mehradsadeghi">GitHub</a> -- Where I share my open source
+                projects and contribute to others
+            </li>
+            <li><a target="_blank" href="https://linkedin.com/in/mehradsadeghi">LinkedIn</a> -- Where I share career and
+                technical experiences
+            </li>
+            <li><a target="_blank" href="https://twitter.com/realmehrad">Twitter</a> -- Where I share about life,
+                technical and music stuff
+            </li>
+            <li><a target="_blank" href="https://medium.com/@mehradsadeghi">Medium</a> -- Where I share about life and
+                technical experiences
+            </li>
+            <li><a target="_blank" href="https://virgool.io/@mehradsadeghi">Virgool</a> -- Where I share about life and
+                technical experiences in Farsi
+            </li>
+            <li><a target="_blank" href="mailto:mehrad177@gmai..com">Gmail</a> -- Where you can email me</li>
+        </ul>
+    </section>
+
+    <section id="help">
+        <h2><strong>>> Help</strong></h2>
+        <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+
+        <strong>Commands:</strong>
+        <ul>
+            <li>home -- It's obvious</li>
+            <li>exp -- List of experiences</li>
+            <li>skills -- List of skills</li>
+            <li>projects -- List of projects</li>
+            <li>cert -- List of Certificates</li>
+            <li>contactme -- Different ways of getting touch with me</li>
+            <li>ui -- UI credits</li>
+        </ul>
+    </section>
+
+    <span class="command">root@mehradsadeghi:/#<input type="text"></span>
+
+    <span id="scroll-to"></span>
+</main>
+
+<script src='./static/js/jquery.js'></script>
+<script src="./static/js/script.js"></script>
+
+<script>
+
+    function diffYears(dt2, dt1) {
+        let diff = (dt2.getTime() - dt1.getTime()) / 1000;
+        diff /= (60 * 60 * 24);
+        return Math.abs((diff / 365.25).toFixed(1));
+    }
+
+    let date = diffYears(new Date(), new Date(2014, 7)); // 1393/05
+    document.getElementById('exp-years').innerHTML = Math.floor(date);
+</script>
 </body>
-
 </html>
