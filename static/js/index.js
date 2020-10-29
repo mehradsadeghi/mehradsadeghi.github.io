@@ -116,7 +116,7 @@ function renderIntoTerminal(content) {
 function animateContentIn(element, afterAnimationCallBack) {
 
     $(element).textTyper({
-        speed: 20,
+        speed: 10,
         afterAnimation: function () {
             afterAnimationCallBack();
         }
